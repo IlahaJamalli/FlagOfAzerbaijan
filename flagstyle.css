@@ -1,0 +1,99 @@
+.flag_all {
+    display: flex;
+    margin: 0 auto;
+    width: 100vw;
+    height: 50vw;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+}
+.blue,
+.red,
+.green {
+    height:  calc(100vw/3);
+}
+
+.blue {
+    background-color: #00B5E2;
+}
+
+.red {
+    display: flex;
+    background-color: #EF3340 ;
+    justify-content: center;
+    align-items: center;
+}
+
+.green {
+    background-color: #509E2F;}
+
+.crescentstar {
+    display: flex;
+    width: 20vw;
+    height: 15vw;
+    position: relative;
+    justify-content: space-between;
+}
+
+.moon{
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: 1;
+}
+
+.outer_circle {
+    background-color: rgb(228, 223, 223);
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%; 
+    z-index: 1;
+    position: relative;
+}
+
+.inner_circle {
+    background-color: #EF3340 ;
+    width: 12.5vw;
+    height: 12.5vw;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    left: calc(1.25vw + 15vw / 9);;
+
+}
+
+.star_shape{
+    display: flex;
+    width:  calc(100vw/12);
+    height:  calc(100vw/12);
+    border-radius: 50%;
+    align-self: center;
+    z-index: 5;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.star_inner_circle{
+    background-color: rgb(228, 223, 223);
+    width:  calc(100vw/24);
+    height:  calc(100vw/24);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+}
+
+.star_spikes{
+    width:  calc(100vw/12);
+    height:  calc(100vw/12);
+    background-color: rgb(228, 223, 223);;
+
+    z-index: 10;
+    clip-path: polygon(
+    50% 0%, 40.433% 26.90%, 14.64% 14.64%, 26.90% 40.433%, 
+    0% 50%, 26.90% 59.567%, 14.64% 85.36%, 40.433% 73.1%, 
+    50% 100%, 59.567% 73.1%, 85.36% 85.36%, 73.1% 59.567%, 
+    100% 50%, 73.1% 40.433%, 85.36% 14.64%, 59.567% 26.90%
+);
+
+}
